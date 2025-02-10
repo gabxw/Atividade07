@@ -1,0 +1,19 @@
+modules = ["dotnet-7.0"]
+run = "dotnet run"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "dotnet run"]
+
+[workflows]
+runButton = "Run"
+
+[[workflows.workflow]]
+name = "Run"
+author = 33903850
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "dotnet run --project Atividade07"
