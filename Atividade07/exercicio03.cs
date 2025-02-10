@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace Atividade07
 {
-    internal class exercício03
+    internal class exercicio03
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine("e");
+            
         }
     }
 }
