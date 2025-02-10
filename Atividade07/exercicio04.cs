@@ -13,7 +13,7 @@ namespace Atividade07
         {
 
             Console.Write("Digite a sua senha: ");
-            string senha = Console.ReadLine();
+            string? senha = Console.ReadLine();
             if (senha == "1234"){
                 Console.WriteLine("Acesso Permitido");
                 Thread.Sleep(2000);
@@ -24,7 +24,7 @@ namespace Atividade07
                 while(i < 3){
                     Console.WriteLine("Senha incorreta");
                     Console.Write("Digite a sua senha: ");
-                    senha = Console.ReadLine();
+                    senha = Console.ReadLine() ?? "";
                     i++;
                 }
                 Console.WriteLine("Acesso negado");
