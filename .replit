@@ -16,4 +16,4 @@ author = 33903850
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "dotnet run --project Atividade07"
+args = "dotnet run --project Atividade07/Atividade07.csproj exercicio03"
